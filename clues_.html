@@ -10,20 +10,6 @@
 {% assign cluenum = 1 %}
 {% for chapter in site.data.clues %}
 
-<h3>{{ chapter.title }}</h3>
 
-<ol class="subheads">
-  {% for subhead in chapter.subheads %}
-  <li class="subhead">{{ subhead.title }}
-    <ol class="clues" start="{{ cluenum }}">
-      {% for clue in subhead.clues %}
-      <li class="clue">
-        {{ clue | markdownify }}
-      </li>
-      {% assign cluenum = cluenum | plus:1 %}
-      {% endfor %}
-    </ol><!-- clues -->
-  </li><!-- subhead -->
-  {% endfor %}
-</ol><!-- subheads -->
-{% endfor %}
+
+
